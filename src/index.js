@@ -10,7 +10,7 @@ window.onscroll = function () {
     prevScrollpos = currentScrollPos;
 }
 
-let countDownDate = new Date("December 15, 2023 15:37:25").getTime();
+let countDownDate = new Date("December 18, 2023 15:00:00").getTime();
 
 function timer() {
     let now = new Date().getTime();
