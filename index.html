@@ -15,12 +15,18 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cantarell&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="./src/main.css">
 </head>
 
 <body>
+    <video autoplay muted loop id="myVideo">
+        <source src="./assets/bg.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
     <header>
         <a href="#home" id="start">WOSS Dual Olympiad</a>
         <nav>
@@ -35,18 +41,26 @@
         <article id="home">
             <div>
                 <h1>WOSS Dual Olympiad 2023</h1>
+                <hr>
                 <p>Join the WOSS Dual Olympiad to challenge yourself in math and computer science, working solo or in
                     teams. Connect with peers who share your passion for excellence!
                 </p>
             </div>
-            <img src="./assets/logo_alt.png" width="300">
+            <img src="./assets/logo.png" width="300">
         </article>
-        <article id="schedule">
-            <h1>Schedule</h1>
-            <p>Join the WOSS Dual Olympiad to challenge yourself in math and computer science, working solo or in
-                teams. Connect with peers who share your passion for excellence!
-            </p>
+        <article id="about">
+            <div>
+                <h1>About the WOSS Dual Olympiad</h1>
+                <hr>
+                <p>The WOSS Dual Olympiad is a Math and Computer Science Competition, held in the WOSS South Campus
+                    Cafeteria, between December XX and December XX.<br><br> It is held on two seperate days, with two rounds within one day - the first day
+                    is for Math, where participants will be solving math problems either in the individual round, or the
+                    team round.<br><br>The second day will be focusing on Computer Science, also with an individual and
+                    a team round. Participants will be solving programming problems on DMOJ with their language of
+                    choice.<br><br>Participants may participate in any or all four rounds.</p>
+            </div>
         </article>
+        <div class="seperator"></div>
     </main>
 </body>
 
