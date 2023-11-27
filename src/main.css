@@ -161,12 +161,19 @@ article h1 {
         align-items: center;
         justify-content: center;
         text-align: center;
+        margin-bottom: 4rem;
     }
     #home div{
         width: 80%;
         display: flex;
         align-items: center;
         flex-direction: column;
+    }
+
+    #countdown {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
     }
 
     #about {
