@@ -53,28 +53,33 @@ function highlightCurrentNav() {
     // Get the position of the sections
     let homeSection = document.getElementById('home')
     let aboutSection = document.getElementById('about')
+    let scheduleSection = document.getElementById('schedule')
 
     // Select the navigation links
     let homeNav = document.getElementById('nav-home');
     let aboutNav = document.getElementById('nav-about');
+    let scheduleNav = document.getElementById('nav-schedule')
 
     // Reset styles for all navigation links
-    homeNav.style.color = 'white';
-    aboutNav.style.color = 'white';
+    homeNav.style.color = '';
+    aboutNav.style.color = '';
+    scheduleNav.style.color = '';
 
     const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
 
     // Get the position of each section
     const homePos = homeSection.offsetTop;
-    const aboutPos = aboutSection.offsetTop-1;
+    const aboutPos = aboutSection.offsetTop;
+    const schedulePos = scheduleSection.offsetTop;
 
     // Logic to highlight the current section's nav link
     if (scrollPosition >= homePos && scrollPosition < aboutPos) {
-        homeNav.style.color = 'hsl(140, 60%, 45%)';
-    } else if (scrollPosition >= aboutPos) {
-        aboutNav.style.color = 'hsl(140, 60%, 45%)';
+        homeNav.style.color = 'hsl(140, 60%, 40%)';
+    } else if (scrollPosition >= aboutPos && scrollPosition < schedulePos) {
+        aboutNav.style.color = 'hsl(140, 60%, 40%)';
+    } else if (scrollPosition >= schedulePos){
+        scheduleNav.style.color = 'hsl(140, 60%, 40%)';
     }
 };
 
-window.onscroll = highlightCurrentNav;
-window.onload = highlightCurrentNav;
+window.onload = highlightCurrentNav();
