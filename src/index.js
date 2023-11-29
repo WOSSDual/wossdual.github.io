@@ -89,3 +89,23 @@ function highlightCurrentNav() {
 };
 
 window.onload = highlightCurrentNav();
+
+/* BACKGROUND SCROLLPAST FIX */
+
+function adjustVideoPosition() {
+    const video = document.getElementById('myVideo');
+    const footer = document.querySelector('footer');
+    const footerTop = footer.offsetTop;
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > footerTop - window.innerHeight) {
+            video.style.position = 'absolute';
+            video.style.bottom = 'auto'; // Adjust if necessary based on your layout
+        } else {
+            video.style.position = 'fixed';
+            video.style.bottom = '0';
+        }
+    });
+}
+
+adjustVideoPosition();
