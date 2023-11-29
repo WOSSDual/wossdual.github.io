@@ -308,6 +308,18 @@ footer hr {
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        width: 90%;
+        width: 100%;
+    }
+
+    #schedule b {
+        display: block; /* Causes a line break after the time */
+    }
+
+    #schedule #lunday {
+        margin-bottom: 2rem;
+    }
+
+    .pipe {
+        display: none;
     }
 }
