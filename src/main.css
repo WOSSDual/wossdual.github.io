@@ -263,4 +263,12 @@ footer hr {
         padding: 4rem 0 4rem 0;
         height: auto;
     }
+
+    #schedule div div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 90%;
+    }
 }
