@@ -141,6 +141,10 @@ article li {
     font-size: 1.5em
 }
 
+#home h1 {
+    font-size: 4.25vw;
+}
+
 #countdown {
     width: 50%;
     margin: 0;
@@ -276,10 +280,21 @@ footer hr {
         flex-direction: column;
     }
 
+    #home h1 {
+        font-size: 3em;
+    }
+
     #countdown {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-areas:
+            'main main'
+            'main main';
         margin-bottom: 2rem;
+        width: 60%;
+    }
+
+    #countdown div {
+        margin: 0.5rem;
     }
 
     #about {
