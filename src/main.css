@@ -86,8 +86,13 @@ main h2 {
     font-weight: 500;
 }
 
+main a {
+    color:hsl(140, 60%, 40%);
+}
+
 article {
     width: 100%;
+    margin-bottom: 4rem;
 }
 
 article h1 {
@@ -111,9 +116,9 @@ article b {
     font-weight: 600;
 }
 
-.seperator {
-    height: 25vh;
-}
+article li {
+    line-height: 250%;
+} 
 
 #home {
     height: 100vh;
@@ -121,6 +126,7 @@ article b {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 0;
 }
 
 #home div {
@@ -191,10 +197,6 @@ article b {
     list-style: none;
 }
 
-#schedule li {
-    margin-bottom: 1rem;
-}
-
 #schedule div div {
     display: flex;
     flex-direction: row;
@@ -209,6 +211,28 @@ article b {
     align-items: flex-start;
     justify-content: center;
     margin-right: 2rem;
+}
+
+#rules {
+    padding: 4rem 0 4rem 0;
+    background-color: #1C1C1C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#rules div {
+    width: 75%;
+}
+
+#rules ul{
+    margin-left: 1rem;
+    width: 85%;
+}
+
+#rules ul ul{
+    margin-left: 2rem;
 }
 
 footer {

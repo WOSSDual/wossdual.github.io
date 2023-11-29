@@ -54,16 +54,19 @@ function highlightCurrentNav() {
     let homeSection = document.getElementById('home')
     let aboutSection = document.getElementById('about')
     let scheduleSection = document.getElementById('schedule')
+    let rulesSection = document.getElementById('rules')
 
     // Select the navigation links
     let homeNav = document.getElementById('nav-home');
     let aboutNav = document.getElementById('nav-about');
     let scheduleNav = document.getElementById('nav-schedule')
+    let rulesNav = document.getElementById('nav-rules')
 
     // Reset styles for all navigation links
     homeNav.style.color = '';
     aboutNav.style.color = '';
     scheduleNav.style.color = '';
+    rulesNav.style.color = '';
 
     const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
 
@@ -71,14 +74,17 @@ function highlightCurrentNav() {
     const homePos = homeSection.offsetTop;
     const aboutPos = aboutSection.offsetTop;
     const schedulePos = scheduleSection.offsetTop;
+    const rulesPos = rulesSection.offsetTop;
 
     // Logic to highlight the current section's nav link
     if (scrollPosition >= homePos && scrollPosition < aboutPos) {
         homeNav.style.color = 'hsl(140, 60%, 40%)';
     } else if (scrollPosition >= aboutPos && scrollPosition < schedulePos) {
         aboutNav.style.color = 'hsl(140, 60%, 40%)';
-    } else if (scrollPosition >= schedulePos){
+    } else if (scrollPosition >= schedulePos && scrollPosition < rulesPos) {
         scheduleNav.style.color = 'hsl(140, 60%, 40%)';
+    } else if (scrollPosition >= rulesPos){
+        rulesNav.style.color = 'hsl(140, 60%, 40%)';
     }
 };
 
