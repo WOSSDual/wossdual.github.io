@@ -66,7 +66,9 @@ header nav a {
     font-size: 1.5em;
     font-weight: 300;
     transition: color 0.25s;
-} header nav a:hover {
+}
+
+header nav a:hover {
     color: hsl(140, 60%, 40%);
 }
 
@@ -76,11 +78,11 @@ main {
     min-height: 100vh;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
-main h1,
 main h2 {
-    font-size: 2em;
+    font-size: 2.25em;
     font-weight: 500;
 }
 
@@ -90,6 +92,7 @@ article {
 
 article h1 {
     font-size: 4em;
+    font-weight: 500;
 }
 
 article p {
@@ -102,6 +105,10 @@ article hr {
     margin: 2rem 0 2rem 0;
     border: white 1px solid;
     border-radius: 100rem;
+}
+
+article b {
+    font-weight: 600;
 }
 
 .seperator {
@@ -140,10 +147,6 @@ article hr {
     padding: 1.5rem;
 }
 
-#countdown h2 {
-    font-size: 2em;
-}
-
 #countdown div {
     display: flex;
     flex-direction: column;
@@ -164,7 +167,7 @@ article hr {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    width: 70%;
+    width: 75%;
 }
 
 #schedule {
@@ -174,12 +177,38 @@ article hr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-} #schedule div {
+}
+
+#schedule div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    width: 70%;
+    width: 75%;
+}
+
+#schedule ul {
+    list-style: none;
+}
+
+#schedule li {
+    margin-bottom: 1rem;
+}
+
+#schedule div div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+}
+
+#schedule div div div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 2rem;
 }
 
 footer {
