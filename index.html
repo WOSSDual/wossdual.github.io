@@ -23,7 +23,7 @@
 </head>
 
 <body onscroll="headerHide(), highlightCurrentNav()">
-    <video autoplay muted loop id="myVideo">
+    <video autoplay muted loop>
         <source src="./assets/bg.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
@@ -34,153 +34,297 @@
             <a href="#about" id="nav-about">About</a>
             <a href="#schedule" id="nav-schedule">Schedule</a>
             <a href="#rules" id="nav-rules">Rules</a>
+            <a href="#format" id="nav-format">Format</a>
         </nav>
     </header>
-    <main>
-        <article id="home">
-            <div>
-                <h1>WOSS Dual Olympiad 2023</h1>
-                <hr>
-                <p>Join the WOSS Dual Olympiad to challenge yourself in math and computer science, working solo or in
-                    teams. Connect with peers who share your passion for excellence!
-                </p>
-            </div>
-            <img src="./assets/logo.png" width="300" alt="WOSS Dual Olympiad Logo">
-        </article>
-        <h2>Countdown!</h2>
-        <div id="countdown">
-            <div>
-                <h2 id="days"></h2>
-                <p>Days</p>
-            </div>
-            <div>
-                <h2 id="hours"></h2>
-                <p>Hours</p>
-            </div>
-            <div>
-                <h2 id="minutes"></h2>
-                <p>Minutes</p>
-            </div>
-            <div>
-                <h2 id="seconds"></h2>
-                <p>Seconds</p>
-            </div>
+    <main id="home">
+        <div>
+            <h1>WOSS Dual Olympiad 2023</h1>
+            <hr>
+            <p>Join the WOSS Dual Olympiad to challenge yourself in math and computer science, working solo or in
+                teams. Connect with peers who share your passion for excellence!
+            </p>
         </div>
-        <article id="about">
+        <img src="./assets/logo.png" width="300" alt="WOSS Dual Olympiad Logo">
+    </main>
+    <h2>Countdown!</h2>
+    <div id="countdown">
+        <div>
+            <h2 id="days"></h2>
+            <p>Days</p>
+        </div>
+        <div>
+            <h2 id="hours"></h2>
+            <p>Hours</p>
+        </div>
+        <div>
+            <h2 id="minutes"></h2>
+            <p>Minutes</p>
+        </div>
+        <div>
+            <h2 id="seconds"></h2>
+            <p>Seconds</p>
+        </div>
+    </div>
+    <article id="about">
+        <div>
+            <h1>About the WOSS Dual Olympiad</h1>
+            <hr>
+            <p>The WOSS Dual Olympiad is a Math and Computer Science Competition, held in the WOSS South Campus
+                Cafeteria, between December 18 and December 19.<br><br> It is held on two seperate days, with two
+                rounds within one day - the first day
+                is for Math, where participants will be solving math problems either in the individual round, or the
+                team round.<br><br>The second day will be focusing on Computer Science, with two divisions - Junior
+                and Senior (Junior is easier, Senior is harder) also with an individual and
+                a team round. Participants will be solving programming problems on DMOJ with their language of
+                choice. Participants will be assigned problems based on their division.<br><br>Participants may
+                participate in any or all four rounds.</p>
+        </div>
+    </article>
+    <article id="schedule">
+        <div>
+            <h1>Schedule</h1>
+            <hr>
             <div>
-                <h1>About the WOSS Dual Olympiad</h1>
-                <hr>
-                <p>The WOSS Dual Olympiad is a Math and Computer Science Competition, held in the WOSS South Campus
-                    Cafeteria, between December 18 and December 19.<br><br> It is held on two seperate days, with two
-                    rounds within one day - the first day
-                    is for Math, where participants will be solving math problems either in the individual round, or the
-                    team round.<br><br>The second day will be focusing on Computer Science, with two divisions - Junior
-                    and Senior (Junior is easier, Senior is harder) also with an individual and
-                    a team round. Participants will be solving programming problems on DMOJ with their language of
-                    choice. Participants will be assigned problems based on their division.<br><br>Participants may
-                    participate in any or all four rounds.</p>
-            </div>
-        </article>
-        <article id="schedule">
-            <div>
-                <h1>Schedule</h1>
-                <hr>
+                <div id="lunday">
+                    <h2>Monday, December 18</h2>
+                    <br>
+                    <ul>
+                        <li>
+                            <p><b>2:45 – 3:05</b><span class="pipe"> |</span> Announcements</p>
+                        </li>
+                        <li>
+                            <p><b>3:05 – 3:55</b><span class="pipe"> |</span> Mathematics Individual Round</p>
+                        </li>
+                        <li>
+                            <p><b>3:55 – 4:15</b><span class="pipe"> |</span> Break</p>
+                        </li>
+                        <li>
+                            <p><b>4:15 – 4:55</b><span class="pipe"> |</span> Mathematics Team Round</p>
+                        </li>
+                        <li>
+                            <p><b>4:55 – 5:30</b><span class="pipe"> |</span> Awards Ceremony</p>
+                        </li>
+                    </ul>
+                </div>
                 <div>
-                    <div id="lunday">
-                        <h2>Monday, December 18</h2>
-                        <br>
-                        <ul>
-                            <li>
-                                <p><b>2:45 – 3:05</b><span class="pipe"> |</span> Announcements</p>
-                            </li>
-                            <li>
-                                <p><b>3:05 – 3:55</b><span class="pipe"> |</span> Mathematics Individual Round</p>
-                            </li>
-                            <li>
-                                <p><b>3:55 – 4:15</b><span class="pipe"> |</span> Break</p>
-                            </li>
-                            <li>
-                                <p><b>4:15 – 4:55</b><span class="pipe"> |</span> Mathematics Team Round</p>
-                            </li>
-                            <li>
-                                <p><b>4:55 – 5:30</b><span class="pipe"> |</span> Awards Ceremony</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h2>Tuesday, December 19</h2>
-                        <br>
-                        <ul>
-                            <li>
-                                <p><b>2:45 – 3:05</b><span class="pipe"> |</span> Announcements</p>
-                            </li>
-                            <li>
-                                <p><b>3:05 – 4:25</b><span class="pipe"> |</span> Computer Science Individual Round</p>
-                            </li>
-                            <li>
-                                <p><b>4:25 – 4:40</b><span class="pipe"> |</span> Social Time</p>
-                            </li>
-                            <li>
-                                <p><b>4:40 – 5:00</b><span class="pipe"> |</span> Computer Science Team Round</p>
-                            </li>
-                            <li>
-                                <p><b>5:00 – 5:30</b><span class="pipe"> |</span> Awards Ceremony</p>
-                            </li>
-                        </ul>
-                    </div>
+                    <h2>Tuesday, December 19</h2>
+                    <br>
+                    <ul>
+                        <li>
+                            <p><b>2:45 – 3:05</b><span class="pipe"> |</span> Announcements</p>
+                        </li>
+                        <li>
+                            <p><b>3:05 – 4:25</b><span class="pipe"> |</span> Computer Science Individual Round</p>
+                        </li>
+                        <li>
+                            <p><b>4:25 – 4:40</b><span class="pipe"> |</span> Social Time</p>
+                        </li>
+                        <li>
+                            <p><b>4:40 – 5:00</b><span class="pipe"> |</span> Computer Science Team Round</p>
+                        </li>
+                        <li>
+                            <p><b>5:00 – 5:30</b><span class="pipe"> |</span> Awards Ceremony</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </article>
-        <article id="rules">
-            <div>
-                <h1>Rules</h1>
-                <hr>
-                <ul>
-                    <li>
-                        <p>Teams consist of <b>one to three (1 – 3)</b> students from White Oaks Secondary School.</p>
-                    </li>
-                    <li>
-                        <p>Scientific calculators are allowed for all rounds.</p>
+        </div>
+    </article>
+    <article id="rules">
+        <div>
+            <h1>Rules</h1>
+            <hr>
+            <ul>
+                <li>
+                    <p>Teams consist of <b>one to three (1 – 3)</b> students from White Oaks Secondary School.</p>
+                </li>
+                <li>
+                    <p>Scientific calculators are allowed for all rounds.</p>
+                    <ul>
+                        <li>
+                            <p>NO graphing calculators permitted!</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>All submissions will be done electronically; <b>please bring a charged device.</b></p>
+                    <ul>
+                        <li>
+                            <p>Submission for Mathematics Individual, Mathematics Team, and Computer Science Team
+                                Rounds will be done through Google Form on your own device.</p>
+                        </li>
+                        <li>
+                            <p>Bring a computer for Computer Science Individual Round.</p>
+                        </li>
                         <ul>
                             <li>
-                                <p>NO graphing calculators permitted!</p>
+                                <p>The CS Individual Round will be using <a href="https://dmoj.ca"
+                                        target="_blank">DMOJ</a>; please register if you have not already!</p>
                             </li>
                         </ul>
-                    </li>
-                    <li>
-                        <p>All submissions will be done electronically; <b>please bring a charged device.</b></p>
-                        <ul>
-                            <li>
-                                <p>Submission for Mathematics Individual, Mathematics Team, and Computer Science Team
-                                    Rounds will be done through Google Form on your own device.</p>
-                            </li>
-                            <li>
-                                <p>Bring a computer for Computer Science Individual Round.</p>
-                            </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Tiebreaking for prizes for mathematics will be done fairly based on problem difficulty,
+                        calculated as the sum of <i>(problem points) * (100% − (percent of people answered
+                            correctly))</i>.</p>
+                </li>
+                <li>
+                    <p>Tiebreaking for prizes for computer science will be done based on speed.</p>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <article id="format">
+        <div>
+            <h1>Format</h1>
+            <hr>
+            <div>
+                <div>
+                    <h2>Mathematics Individual</h2>
+                    <br>
+                    <ul>
+                        <li>
+                            <p><b>50</b> Minutes</p>
+                        </li>
+                        <li>
+                            <p><b>25</b> Problems</p>
                             <ul>
                                 <li>
-                                    <p>The CS Individual Round will be using <a href="https://dmoj.ca"
-                                            target="_blank">DMOJ</a>; please register if you have not already!</p>
+                                    <p>Part A: 10 Problems, 5 Points each</p>
+                                </li>
+                                <li>
+                                    <p>Part B: 10 Problems, 6 Points each</p>
+                                </li>
+                                <li>
+                                    <p>Part C: 5 Problems, 8 Points each</p>
                                 </li>
                             </ul>
-                        </ul>
-                    </li>
-                    <li>
-                        <p>Tiebreaking for prizes for mathematics will be done fairly based on problem difficulty,
-                            calculated as the sum of <i>(problem points) * (100% − (percent of people answered
-                                correctly))</i>.</p>
-                    </li>
-                    <li>
-                        <p>Tiebreaking for prizes for computer science will be done based on speed.</p>
-                    </li>
-                </ul>
+                        </li>
+                        <li>
+                            <p>Total: out of <b>150</b></p>
+                        </li>
+                        <li>
+                            <p>No points for leaving blank</p>
+                        </li>
+                        <li>
+                            <p>No penalty for incorrect answers or guessing</p>
+                        </li>
+                        <li>
+                            <p>Answers are integers from 00 to 99, inclusive</p>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div>
+                    <h2>Mathematics Team</h2>
+                    <br>
+                    <ul>
+                        <li>
+                            <p><b>40</b> Minutes</p>
+                        </li>
+                        <li>
+                            <p><b>10</b> Problems</p>
+                            <ul>
+                                <li>
+                                    <p>Part A: 4 Problems, 5 Points each</p>
+                                </li>
+                                <li>
+                                    <p>Part B: 4 Problems, 6 Points each</p>
+                                </li>
+                                <li>
+                                    <p>Part C: 2 Problems, 8 Points each</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>Total: out of <b>60</b></p>
+                        </li>
+                        <li>
+                            <p>No points for leaving blank</p>
+                        </li>
+                        <li>
+                            <p>No penalty for incorrect answers or guessing</p>
+                        </li>
+                        <li>
+                            <p>Answers are integers from 00 to 99, inclusive</p>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div>
+                    <h2>Computer Science Individual</h2>
+                    <br>
+                    <ul>
+                        <li>
+                            <p><b>80</b> Minutes</p>
+                        </li>
+                        <li>
+                            <p><b>3</b> Problems</p>
+                            <ul>
+                                <li>
+                                    <p>50 points for each fully accepted submission</p>
+                                </li>
+                                <li>
+                                    <p>Partial points are available for some problems</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>Total: out of <b>150</b></p>
+                        </li>
+                        <li>
+                            <p>Unlimited submissions allowed</p>
+                        </li>
+                        <li>
+                            <p>Junior and Senior Divisions</p>
+                        </li>
+                        <li>
+                            <p>Will be run with DMOJ</p>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div>
+                    <h2>Computer Science Team</h2>
+                    <br>
+                    <ul>
+                        <li>
+                            <p><b>20</b> Minutes</p>
+                        </li>
+                        <li>
+                            <p><b>10</b> Problems</p>
+                            <ul>
+                                <li>
+                                    <p>5–7 points per correct answer to a problem</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>Total: out of <b>60</b></p>
+                        </li>
+                        <li>
+                            <p>Theory problems for logic, syntax, and more</p>
+                        </li>
+                        <li>
+                            <p>No points for leaving blank</p>
+                        </li>
+                        <li>
+                            <p>No penalty for incorrect answers or guessing</p>
+                        </li>
+                        <li>
+                            <p>Answers are integers from 00 to 99, inclusive</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </article>
-        <footer>
-            <hr>
-            <p>© 2023 WOSS Dual Olympiad</p>
-        </footer>
-    </main>
+        </div>
+    </article>
+    <footer>
+        <hr>
+        <p>© 2023 WOSS Dual Olympiad</p>
+    </footer>
     <script src="./src/index.js"></script>
 </body>
 

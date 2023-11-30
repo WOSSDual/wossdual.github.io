@@ -55,18 +55,21 @@ function highlightCurrentNav() {
     let aboutSection = document.getElementById('about')
     let scheduleSection = document.getElementById('schedule')
     let rulesSection = document.getElementById('rules')
+    let formatSection = document.getElementById('format')
 
     // Select the navigation links
     let homeNav = document.getElementById('nav-home');
     let aboutNav = document.getElementById('nav-about');
     let scheduleNav = document.getElementById('nav-schedule')
     let rulesNav = document.getElementById('nav-rules')
+    let formatNav = document.getElementById('nav-format')
 
     // Reset styles for all navigation links
     homeNav.style.color = '';
     aboutNav.style.color = '';
     scheduleNav.style.color = '';
     rulesNav.style.color = '';
+    formatNav.style.color = '';
 
     const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
 
@@ -75,6 +78,7 @@ function highlightCurrentNav() {
     const aboutPos = aboutSection.offsetTop;
     const schedulePos = scheduleSection.offsetTop;
     const rulesPos = rulesSection.offsetTop;
+    const formatPos = formatSection.offsetTop;
 
     // Logic to highlight the current section's nav link
     if (scrollPosition >= homePos && scrollPosition < aboutPos) {
@@ -83,8 +87,10 @@ function highlightCurrentNav() {
         aboutNav.style.color = 'hsl(140, 60%, 40%)';
     } else if (scrollPosition >= schedulePos && scrollPosition < rulesPos) {
         scheduleNav.style.color = 'hsl(140, 60%, 40%)';
-    } else if (scrollPosition >= rulesPos){
+    } else if (scrollPosition >= rulesPos && scrollPosition < formatPos) {
         rulesNav.style.color = 'hsl(140, 60%, 40%)';
+    } else if (scrollPosition >= formatPos){
+        formatNav.style.color = 'hsl(140, 60%, 40%)';
     }
 };
 
@@ -93,7 +99,7 @@ window.onload = highlightCurrentNav();
 /* BACKGROUND SCROLLPAST FIX */
 
 function adjustVideoPosition() {
-    const video = document.getElementById('myVideo');
+    const video = document.querySelector('video');
     const footer = document.querySelector('footer');
     const footerTop = footer.offsetTop;
 

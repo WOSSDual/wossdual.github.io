@@ -1,3 +1,4 @@
+/* #region WHOLE */
 *,
 *:after,
 *:before {
@@ -19,9 +20,13 @@ body {
     position: relative;
     font-family: 'Work Sans', sans-serif;
     background-color: #1C1C1C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#myVideo {
+video {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -30,10 +35,47 @@ body {
     z-index: -1;
 }
 
+/* #endregion */
+
+/* #region BASIC */
+
+h1 {
+    font-size: 4em;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2.25em;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+a {
+    color: hsl(140, 60%, 40%);
+}
+
+b {
+    font-weight: 600;
+}
+
+hr {
+    width: 90%;
+    margin: 2rem 0 2rem 0;
+    border: white 1px solid;
+    border-radius: 100rem;
+}
+
+/* #endregion */
+
+/* #region HEADER*/
+
 header {
     position: fixed;
     width: 100%;
-    overflow: hidden;
     background-color: #1C1C1C;
     display: flex;
     justify-content: space-between;
@@ -41,16 +83,6 @@ header {
     flex-direction: row;
     top: 0;
     transition: top 0.5s ease-in-out;
-}
-
-#start {
-    background-color: hsl(140, 60%, 40%);
-    padding: 1.25rem;
-    text-align: left;
-    text-align: center;
-    font-size: 1.75em;
-    text-decoration: none;
-    color: white;
 }
 
 header nav {
@@ -72,55 +104,52 @@ header nav a:hover {
     color: hsl(140, 60%, 40%);
 }
 
-main {
-    display: flex;
+#start {
+    background-color: hsl(140, 60%, 40%);
+    padding: 1.25rem;
+    text-align: left;
+    text-align: center;
+    font-size: 1.75em;
+    text-decoration: none;
     color: white;
-    min-height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    font-weight: 400;
 }
 
-main h2 {
-    font-size: 2.25em;
-    font-weight: 500;
-}
+/* #endregion */
 
-main a {
-    color:hsl(140, 60%, 40%);
-}
+/* #region ARTICLE */
 
 article {
     width: 100%;
     margin-bottom: 4rem;
+    padding: 4rem 0 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-article h1 {
-    font-size: 4em;
-    font-weight: 500;
-}
-
-article p {
-    font-size: 1.25em;
-    font-weight: 300;
-}
-
-article hr {
-    width: 90%;
-    margin: 2rem 0 2rem 0;
-    border: white 1px solid;
-    border-radius: 100rem;
-}
-
-article b {
-    font-weight: 600;
+article div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 75%;
 }
 
 article li {
     line-height: 250%;
-} 
+}
 
-#home {
+article ul ul {
+    margin-left: 2rem;
+}
+
+/* #endregion */
+
+/* #region MAIN */
+
+main {
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -129,7 +158,7 @@ article li {
     margin-bottom: 0;
 }
 
-#home div {
+main div {
     width: 60%;
     display: flex;
     align-items: flex-start;
@@ -137,13 +166,17 @@ article li {
     flex-direction: column;
 }
 
-#home p {
+main p {
     font-size: 1.5em
 }
 
-#home h1 {
+main h1 {
     font-size: 4.25vw;
 }
+
+/* #endregion */
+
+/* #region COUNTDOWN */
 
 #countdown {
     width: 50%;
@@ -163,38 +196,20 @@ article li {
     align-items: center;
 }
 
+/* #endregion */
+
+/* #region ABOUT */
+
 #about {
-    padding: 4rem 0 4rem 0;
     background-color: #1C1C1C;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
-#about div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 75%;
-}
+/* #endregion */
+
+/* #region SCHEDULE */
 
 #schedule {
-    padding: 4rem 0 4rem 0;
     background-color: hsl(140, 60%, 40%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#schedule div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 75%;
 }
 
 #schedule ul {
@@ -217,27 +232,50 @@ article li {
     margin-right: 2rem;
 }
 
+/* #endregion */
+
+/* #region RULES */
+
 #rules {
-    padding: 4rem 0 4rem 0;
     background-color: #1C1C1C;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
-#rules div {
-    width: 75%;
-}
-
-#rules ul{
+#rules ul {
     margin-left: 1rem;
     width: 85%;
 }
 
-#rules ul ul{
-    margin-left: 2rem;
+/* #endregion */
+
+/* #region FORMAT */
+
+#format {
+    background-color: hsl(140, 60%, 40%);
 }
+
+#format div div {
+    display: grid;
+    grid-template-areas:
+        'main main'
+        'main main';
+    grid-auto-columns: minmax(0, 1fr);
+    width: 90%;
+    justify-content: start;
+    justify-items: start;
+}
+
+#format div div div{
+    display: flex;
+}
+
+#format ul {
+    margin-left: 1rem;
+    width: 95%;
+}
+
+/* #endregion */
+
+/* #region FOOTER */
 
 footer {
     display: flex;
@@ -252,18 +290,19 @@ footer {
 footer hr {
     width: 50%;
     margin-bottom: 2rem;
+    margin-top: 0;
 }
+
+/* #endregion */
+
+/* #region MOBILE OPTIMIZATION */
 
 @media screen and (max-width: 500px) {
     header {
         display: none;
     }
 
-    article h1 {
-        font-size: 3em;
-    }
-
-    #home {
+    main {
         height: auto;
         display: flex;
         flex-direction: column;
@@ -273,14 +312,18 @@ footer hr {
         margin-bottom: 4rem;
     }
 
-    #home div {
+    main div {
         width: 80%;
         display: flex;
         align-items: center;
         flex-direction: column;
     }
 
-    #home h1 {
+    main h1 {
+        font-size: 3em;
+    }
+
+    article h1 {
         font-size: 3em;
     }
 
@@ -312,7 +355,8 @@ footer hr {
     }
 
     #schedule b {
-        display: block; /* Causes a line break after the time */
+        display: block;
+        /* Causes a line break after the time */
     }
 
     #schedule #lunday {
@@ -322,4 +366,10 @@ footer hr {
     .pipe {
         display: none;
     }
+
+    #format div div {
+        display: flex;
+    }
 }
+
+/* #endregion */
