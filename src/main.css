@@ -167,7 +167,7 @@ main div {
 }
 
 main p {
-    font-size: 1.5em
+    font-size: 1.6vw
 }
 
 main h1 {
@@ -297,7 +297,7 @@ footer hr {
 
 /* #region MOBILE OPTIMIZATION */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
     header {
         display: none;
     }
