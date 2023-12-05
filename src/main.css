@@ -318,6 +318,10 @@ footer hr {
         flex-direction: column;
     }
 
+    main p {
+        font-size: 1.5em
+    }
+
     main h1 {
         font-size: 3em;
     }
