@@ -1,4 +1,4 @@
-/* HEADER */
+// #region HEADER
 
 let yPos = window.scrollY
 const header = document.getElementById('header');
@@ -12,7 +12,9 @@ function headerHide(){
     yPos = window.scrollY
 }
 
-/* COUNTDOWN */
+// #endregion
+
+// #region COUNTDOWN
 
 let countDownDate = new Date("December 18, 2023 15:00:00").getTime();
 
@@ -46,7 +48,9 @@ let x = setInterval(function () {
 
 }, 1000);
 
-/* NAVBAR COLORING */
+// #endregion
+
+// #region NAVBAR COLORING
 
 function highlightCurrentNav() {
 
@@ -56,6 +60,7 @@ function highlightCurrentNav() {
     let scheduleSection = document.getElementById('schedule')
     let rulesSection = document.getElementById('rules')
     let formatSection = document.getElementById('format')
+    let sponsorsSection = document.getElementById('sponsors')
 
     // Select the navigation links
     let homeNav = document.getElementById('nav-home');
@@ -63,6 +68,7 @@ function highlightCurrentNav() {
     let scheduleNav = document.getElementById('nav-schedule')
     let rulesNav = document.getElementById('nav-rules')
     let formatNav = document.getElementById('nav-format')
+    let sponsorsNav = document.getElementById('nav-sponsors')
 
     // Reset styles for all navigation links
     homeNav.style.color = '';
@@ -70,6 +76,7 @@ function highlightCurrentNav() {
     scheduleNav.style.color = '';
     rulesNav.style.color = '';
     formatNav.style.color = '';
+    sponsorsNav.style.color = '';
 
     const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
 
@@ -79,6 +86,7 @@ function highlightCurrentNav() {
     const schedulePos = scheduleSection.offsetTop;
     const rulesPos = rulesSection.offsetTop;
     const formatPos = formatSection.offsetTop;
+    const sponsorsPos = sponsorsSection.offsetTop;
 
     // Logic to highlight the current section's nav link
     if (scrollPosition >= homePos && scrollPosition < aboutPos) {
@@ -89,12 +97,16 @@ function highlightCurrentNav() {
         scheduleNav.style.color = 'hsl(140, 60%, 40%)';
     } else if (scrollPosition >= rulesPos && scrollPosition < formatPos) {
         rulesNav.style.color = 'hsl(140, 60%, 40%)';
-    } else if (scrollPosition >= formatPos){
+    } else if (scrollPosition >= formatPos && scrollPosition < sponsorsPos){
         formatNav.style.color = 'hsl(140, 60%, 40%)';
+    } else if (scrollPosition >= sponsorsPos) {
+        sponsorsNav.style.color = 'hsl(140, 60%, 40%)';
     }
 };
 
 window.onload = highlightCurrentNav();
+
+// #endregion
 
 /* BACKGROUND SCROLLPAST FIX */
 

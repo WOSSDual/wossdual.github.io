@@ -274,6 +274,22 @@ main h1 {
 
 /* #endregion */
 
+/* #region SPONSORS */
+
+#sponsors {
+    background-color: #1C1C1C;
+}
+
+#sponsors a img{
+    transition: width 0.5s;
+}
+
+#sponsors a img:hover {
+    width: 50%;
+}
+
+/* #endregion */
+
 /* #region FOOTER */
 
 footer {
