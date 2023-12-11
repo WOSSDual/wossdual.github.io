@@ -282,6 +282,7 @@ main h1 {
 
 #sponsors a img{
     transition: width 0.5s;
+    width: 500px;
 }
 
 #sponsors a img:hover {
@@ -388,6 +389,14 @@ footer hr {
 
     #format div div {
         display: flex;
+    }
+
+    #sponsors a img{
+        width: 200px;
+    }
+    
+    #sponsors a img:hover {
+        width: 100%;
     }
 }
 
