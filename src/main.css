@@ -280,13 +280,27 @@ main h1 {
     background-color: #1C1C1C;
 }
 
-#sponsors a img{
+#sponsors div div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+#sponsors div div a{
+    display: block;
+    width: 30%;
+    margin-right: 5rem;
+}
+
+#sponsors div div a img{
     transition: width 0.5s;
-    width: 500px;
+    width: 100%;
 }
 
 #sponsors a img:hover {
-    width: 50%;
+    width: 120%;
 }
 
 /* #endregion */
@@ -391,12 +405,19 @@ footer hr {
         display: flex;
     }
 
-    #sponsors a img{
-        width: 200px;
+    #sponsors div div {
+        flex-direction: column;
+        align-items:start;
+    }
+
+    #sponsors div div a{
+        display: block;
+        width: 100%;
+        margin-bottom: 2rem;
     }
     
     #sponsors a img:hover {
-        width: 100%;
+        width: 120%;
     }
 }
 
