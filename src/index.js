@@ -16,13 +16,17 @@ function headerHide(){
 
 // #region COUNTDOWN
 
-let countDownDate = new Date("December 18, 2023 15:00:00").getTime();
+let countDownDate = new Date("December 16, 2024 15:00:00").getTime();
 
 function timer() {
 
     // Find the distance between now and the count down date
     let now = new Date().getTime();
     let distance = countDownDate - now; 
+
+    if (distance < 0) {
+        distance = 1;
+    }
 
     // Time calculations for days, hours, minutes and seconds
     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -35,9 +39,6 @@ function timer() {
     document.getElementById("minutes").innerHTML = minutes
     document.getElementById("seconds").innerHTML = seconds
 
-    if (distance < 0) {
-        clearInterval(x);
-    }
 }
 
 timer()
