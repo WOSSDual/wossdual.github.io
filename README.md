@@ -1,2 +1,2 @@
 # wossdual.github.io
-WOSS Dual Olympiad's Website - 2023
+WOSS Dual Olympiad's Website - 2024
